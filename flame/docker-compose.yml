@@ -10,7 +10,7 @@ services:
     ports:
       - 5005:5005
     environment:
-      - PASSWORD=${password}
+      - PASSWORD=${PASSWORD}
     restart: unless-stopped
 
 volumes:
