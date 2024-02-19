@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  flame:
+    image: pawelmalak/flame:multiarch
+    container_name: flame
+    volumes:
+      - data:/app/data
+      #- /var/run/docker.sock:/var/run/docker.sock # optional but required for Docker integration
+    ports:
+      - 5005:5005
+    environment:
+      - PASSWORD=${password}
+    restart: unless-stopped
+
+volumes:
+  data:
