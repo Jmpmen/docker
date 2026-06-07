@@ -1,0 +1,10 @@
+services:
+  go2rtc:
+    image: alexxit/go2rtc:latest
+    network_mode: host
+    privileged: true
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Manila
+    volumes:
+      - ./config:/config
