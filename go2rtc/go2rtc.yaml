@@ -1,0 +1,12 @@
+streams:
+  living room: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=1&subtype=0
+  kitchen: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=2&subtype=0
+  garage: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=3&subtype=0
+
+# Global performance tweaks for ultra-low latency WebRTC
+webrtc:
+  listen: ":8555"
+  candidates:
+    - go2rtc.home.arpa:8555
+    - 192.168.1.XX:8555
+    - stun:8555
