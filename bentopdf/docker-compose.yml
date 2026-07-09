@@ -1,0 +1,7 @@
+services:
+  bentopdf:
+    image: bentopdfteam/bentopdf-simple:latest
+    container_name: bentopdf
+    ports:
+      - 8082:8080
+    restart: unless-stopped
