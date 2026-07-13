@@ -1,0 +1,95 @@
+- Network:
+    - OpenWRT:
+        icon: openwrt.svg
+        href: {{HOMEPAGE_VAR_OPENWRT_URL}}
+        description: Router and network management
+        proxmoxNode: {{HOMEPAGE_VAR_PROXMOX_NODE}}
+        proxmoxVMID: {{HOMEPAGE_VAR_PROXMOX_OPENWRT_VMID}}
+        widget:
+          type: openwrt
+          url: {{HOMEPAGE_VAR_OPENWRT_URL}}
+          username: root
+          password: {{HOMEPAGE_VAR_ROOT_PASSWORD}}
+    - PiHole:
+        icon: pi-hole.svg
+        href: {{HOMEPAGE_VAR_PIHOLE_URL}}
+        description: DNS and ad blocking service
+        proxmoxNode: {{HOMEPAGE_VAR_PROXMOX_NODE}}
+        proxmoxVMID: {{HOMEPAGE_VAR_PROXMOX_PIHOLE_VMID}}
+        proxmoxType: lxc
+        widget:
+          type: pihole
+          url: {{HOMEPAGE_VAR_PIHOLE_URL}}
+          version: 6
+          key: {{HOMEPAGE_VAR_ROOT_PASSWORD}}
+    - Nginx Proxy Manager:
+        icon: npm.svg
+        href: {{HOMEPAGE_VAR_NPM_URL}}
+        description: Reverse proxy and SSL management
+        widget:
+          type: npm
+          url: {{HOMEPAGE_VAR_NPM_URL}}
+          username: {{HOMEPAGE_VAR_NPM_USERNAME}}
+          password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
+    - Tailscale:
+        icon: tailscale.svg
+        description: VPN and secure networking
+        proxmoxNode: {{HOMEPAGE_VAR_PROXMOX_NODE}}
+        proxmoxVMID: {{HOMEPAGE_VAR_PROXMOX_TAILSCALE_VMID}}
+        proxmoxType: lxc
+        widget:
+          type: tailscale
+          deviceid: {{HOMEPAGE_VAR_TAILSCALE_DEVICEID}}
+          key: {{HOMEPAGE_VAR_TAILSCALE_ACCESS_TOKEN}}
+
+- Services:
+    - Group A:
+        - Proxmox:
+            icon: proxmox.svg
+            href: {{HOMEPAGE_VAR_PROXMOX_URL}}
+            description: Virtualization platform
+            widget:
+                type: proxmox
+                url: {{HOMEPAGE_VAR_PROXMOX_URL}}
+                username: {{HOMEPAGE_VAR_PROXMOX_TOKEN}}
+                password: {{HOMEPAGE_VAR_PROXMOX_SECRET}}
+                node: {{HOMEPAGE_VAR_PROXMOX_NODE}}
+        - Dockge:
+            icon: dockge.svg
+            href: {{HOMEPAGE_VAR_DOCKGE_URL}}
+            description: Docker and container management
+            showStats: true
+            proxmoxNode: {{HOMEPAGE_VAR_PROXMOX_NODE}}
+            proxmoxVMID: {{HOMEPAGE_VAR_PROXMOX_DOCKGE_VMID}}
+            proxmoxType: lxc
+    - Group B:
+        - n8n:
+            icon: n8n.svg
+            href: {{HOMEPAGE_VAR_N8N_URL}}
+            description: Workflow automation and integration
+        - go2rtc:
+            icon: go2rtc.png
+            href: {{HOMEPAGE_VAR_GO2RTC_URL}}
+            description: WebRTC and RTSP streaming server
+        - BentoPDF:
+            icon: bentopdf.svg
+            href: {{HOMEPAGE_VAR_BENTOPDF_URL}}
+            description: PDF generation and manipulation
+        - Adminer:
+            icon: adminer.svg
+            href: {{HOMEPAGE_VAR_ADMINER_URL}}
+            description: Database management
+
+- Cameras:
+    - Living Room:
+        widget:
+          type: iframe
+          src: {{HOMEPAGE_VAR_CAMERA_LIVING_ROOM_URL}}
+    - Kitchen:
+        widget:
+          type: iframe
+          src: {{HOMEPAGE_VAR_CAMERA_KITCHEN_URL}}
+    - Garage:
+        widget:
+          type: iframe
+          src: {{HOMEPAGE_VAR_CAMERA_GARAGE_URL}}

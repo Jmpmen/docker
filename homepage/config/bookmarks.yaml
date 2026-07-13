@@ -1,0 +1,39 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Developer:
+    - Github:
+        - icon: github-light.svg
+          href: https://github.com/
+    - Cloudflare:
+        - icon: cloudflare.svg
+          href: https://dash.cloudflare.com/
+    - Deepseek:
+        - icon: deepseek.svg
+          href: https://platform.deepseek.com/usage
+    - NPM Check Updates:
+        - icon: npm.svg
+          href: https://chrispennington.dev/blog/how-to-update-npm-packages-safely-with-npm-check-updates/
+
+- Social:
+    - Gmail:
+        - icon: gmail.svg
+          href: https://mail.google.com/
+    - Facebook:
+        - icon: facebook.svg
+          href: https://facebook.com/
+    - Reddit:
+        - icon: reddit.svg
+          href: https://reddit.com/
+
+- Entertainment:
+    - YouTube:
+        - icon: youtube.svg
+          href: https://youtube.com/
+    - Youtube Music:
+        - icon: youtube-music.svg
+          href: https://music.youtube.com/
+    - Stremio:
+        - icon: stremio.svg
+          href: https://web.stremio.com/
