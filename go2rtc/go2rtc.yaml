@@ -1,5 +1,5 @@
 streams:
-  living room: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=1&subtype=0
+  living_room: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=1&subtype=0
   kitchen: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=2&subtype=0
   garage: rtsp://user:password@ipaddress:554/cam/realmonitor?channel=3&subtype=0
 
