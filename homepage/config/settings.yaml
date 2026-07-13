@@ -14,7 +14,7 @@ layout:
   Network:
     icon: mdi-web.svg
     style: row
-    columns: 2
+    columns: 3
   Services:
     icon: mdi-server.svg
     Group A:

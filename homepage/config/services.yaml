@@ -22,15 +22,15 @@
           url: {{HOMEPAGE_VAR_PIHOLE_URL}}
           version: 6
           key: {{HOMEPAGE_VAR_ROOT_PASSWORD}}
-    - Nginx Proxy Manager:
-        icon: npm.svg
-        href: {{HOMEPAGE_VAR_NPM_URL}}
-        description: Reverse proxy and SSL management
-        widget:
-          type: npm
-          url: {{HOMEPAGE_VAR_NPM_URL}}
-          username: {{HOMEPAGE_VAR_NPM_USERNAME}}
-          password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
+    # - Nginx Proxy Manager:
+    #     icon: npm.svg
+    #     href: {{HOMEPAGE_VAR_NPM_URL}}
+    #     description: Reverse proxy and SSL management
+    #     widget:
+    #       type: npm
+    #       url: {{HOMEPAGE_VAR_NPM_URL}}
+    #       username: {{HOMEPAGE_VAR_NPM_USERNAME}}
+    #       password: {{HOMEPAGE_VAR_NPM_PASSWORD}}
     - Tailscale:
         icon: tailscale.svg
         description: VPN and secure networking
@@ -68,7 +68,7 @@
             href: {{HOMEPAGE_VAR_N8N_URL}}
             description: Workflow automation and integration
         - go2rtc:
-            icon: go2rtc.png
+            icon: go2rtc.webp
             href: {{HOMEPAGE_VAR_GO2RTC_URL}}
             description: WebRTC and RTSP streaming server
         - BentoPDF:
@@ -79,6 +79,10 @@
             icon: adminer.svg
             href: {{HOMEPAGE_VAR_ADMINER_URL}}
             description: Database management
+        - NVR:
+            icon: dahua.webp
+            href: {{HOMEPAGE_VAR_NVR_URL}}
+            description: Network Video Recorder
 
 - Cameras:
     - Living Room:
