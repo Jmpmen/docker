@@ -12,7 +12,7 @@
           password: {{HOMEPAGE_VAR_ROOT_PASSWORD}}
     - PiHole:
         icon: pi-hole.svg
-        href: {{HOMEPAGE_VAR_PIHOLE_URL}}
+        href: "{{HOMEPAGE_VAR_PIHOLE_URL}}/admin"
         description: DNS and ad blocking service
         proxmoxNode: {{HOMEPAGE_VAR_PROXMOX_NODE}}
         proxmoxVMID: {{HOMEPAGE_VAR_PROXMOX_PIHOLE_VMID}}
@@ -88,12 +88,12 @@
     - Living Room:
         widget:
           type: iframe
-          src: {{HOMEPAGE_VAR_CAMERA_LIVING_ROOM_URL}}
+          src: "{{HOMEPAGE_VAR_GO2RTC_URL}}/stream.html?src={{HOMEPAGE_VAR_CAMERA_SRC1}}&mode={{HOMEPAGE_VAR_CAMERA_MODE}}"
     - Kitchen:
         widget:
           type: iframe
-          src: {{HOMEPAGE_VAR_CAMERA_KITCHEN_URL}}
+          src: "{{HOMEPAGE_VAR_GO2RTC_URL}}/stream.html?src={{HOMEPAGE_VAR_CAMERA_SRC2}}&mode={{HOMEPAGE_VAR_CAMERA_MODE}}"
     - Garage:
         widget:
           type: iframe
-          src: {{HOMEPAGE_VAR_CAMERA_GARAGE_URL}}
+          src: "{{HOMEPAGE_VAR_GO2RTC_URL}}/stream.html?src={{HOMEPAGE_VAR_CAMERA_SRC3}}&mode={{HOMEPAGE_VAR_CAMERA_MODE}}"
