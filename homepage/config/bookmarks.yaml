@@ -12,6 +12,9 @@
     - Deepseek:
         - icon: deepseek.svg
           href: https://platform.deepseek.com/usage
+    - Oracle:
+        - icon: oracle.svg
+          href: https://cloud.oracle.com/?region=ap-singapore-1
     - NPM Check Updates:
         - icon: npm.svg
           href: https://chrispennington.dev/blog/how-to-update-npm-packages-safely-with-npm-check-updates/
